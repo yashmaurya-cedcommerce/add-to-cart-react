@@ -30,6 +30,7 @@ function App() {
           if (item2.id == productID) {
             var tempArray = cartArray;
             tempArray[index].quant++;
+            tempArray[index].productTotal = tempArray[index].quant*tempArray[index].price;
 
             setCartArray([...tempArray]);
             flag = 1;
@@ -45,7 +46,8 @@ function App() {
             photograph: item.photograph,
             price: item.price,
             material: item.material,
-            quant: 1
+            quant: 1,
+            productTotal: 1*item.price
           }]);
         }
       }
@@ -58,6 +60,7 @@ function App() {
     var cartID = event.target.id;
     var tempArray = cartArray;
     tempArray[cartID].quant++;
+    tempArray[cartID].productTotal = tempArray[cartID].quant*tempArray[cartID].price;
     setCartArray([...tempArray]);
   }
 
@@ -77,6 +80,7 @@ function App() {
     else {
       var tempArray = cartArray;
       tempArray[cartID].quant--;
+      tempArray[cartID].productTotal = tempArray[cartID].quant*tempArray[cartID].price;
       setCartArray([...tempArray]);
     }
 

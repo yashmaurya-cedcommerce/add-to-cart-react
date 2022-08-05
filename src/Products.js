@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Data } from './Data'
 
 export default function Products(props) {
 
-
+  const [productTotal, setProductTotal] = useState(0);
+  var tempTotal = 0;
   return (
 
     <>
@@ -31,8 +32,10 @@ export default function Products(props) {
               </thead>
               <tbody>
                 {props.cartArray.map((item, index) => {
+                  {tempTotal = tempTotal+item.productTotal}
                   return (
                     <tr>
+                      
                       <td className='cartImage'><img src={item.photograph} className="img-fluid my-2" alt="" /></td>
                       <td>{item.name}</td>
                       <td>{item.price}</td>
@@ -40,6 +43,15 @@ export default function Products(props) {
                     </tr>
                   );
                 })}
+                
+                <tr className='totalTr bg-dark text-light'>
+                  <td>
+                  </td>
+                  <td>
+                  </td>
+                  <td><b>Total: </b></td>
+                  <td className='py-2'><b>{tempTotal}</b></td>
+                </tr>
               </tbody>
             </table>
             <button className='emptyCart btn btn-dark fw-bold mt-3' onClick={(event) => props.emptyCart(event)}>Empty Cart</button>

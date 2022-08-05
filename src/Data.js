@@ -3,7 +3,7 @@ export const Data = {
         {
             "id":0,
             "name": "US POLO Jeans",
-            "price": "$100.50",
+            "price": "100.50",
             "photograph": "../jeans.jpeg",
             "material": "cotton",
             
@@ -12,7 +12,7 @@ export const Data = {
         {
             "id": 1,
             "name": "Louise Vitton Shirt",
-            "price": "$100.50",
+            "price": "100.50",
             "photograph": "../shirt.webp",
             "material": "cotton",
             
@@ -21,7 +21,7 @@ export const Data = {
         {
             "id": 2,
             "name": "Monte Carlo Sweater",
-            "price": "$100.50",
+            "price": "100.50",
             "photograph": "../sweater.jpeg",
             "material": "cotton",
             
@@ -30,7 +30,7 @@ export const Data = {
         {
             "id": 3,
             "name": "Gucci Shirts",
-            "price": "$100.50",
+            "price": "100.50",
             "photograph": "../shirt2.jpeg",
             "material": "cotton",
             
@@ -39,7 +39,7 @@ export const Data = {
         {
             "id": 4,
             "name": "Roadster Hoodie",
-            "price": "$100.50",
+            "price": "100.50",
             "photograph": "../hoodie.webp",
             "material": "cotton",
             
@@ -48,7 +48,7 @@ export const Data = {
         {
             "id": 5,
             "name": "Schwann Hoodie",
-            "price": "$100.50",
+            "price": "100.50",
             "photograph": "../hoodie2.jpeg",
             "material": "cotton",
             
@@ -57,7 +57,7 @@ export const Data = {
         {
             "id": 6,
             "name": "Leader Jacket",
-            "price": "$100.50",
+            "price": "100.50",
             "photograph": "../jacket.webp",
             "material": "cotton",
             
